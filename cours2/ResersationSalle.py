@@ -4,8 +4,8 @@ class Salle :
         self.capacite = capacite
     def  afficher(self):
         return f"{self.nom} ({self.capacite})"
-est_dispo = Salle("Salle A", 50)
-print(est_dispo.afficher())
+    def est_disponible(self):
+        return True
 
 
 class Reservation:
@@ -25,5 +25,6 @@ class employe:
         self.numero = numero
     def afficher(self):
         return f"{self.nom} ({self.numero})"
+    
 reserver = employe("Baba Ndom", "12345")
-print(reserver.afficher())
+print(reserver.afficher()) 
