@@ -122,4 +122,4 @@ def jeton_expire() -> str:
     return f"{entete}.{corps}.{signature}"
 
 print("Jeton expire :", jeton_expire())
-print("Jeton verifie :", verifier(jeton_expire()))
+print("Jeton verifie :", verifier(jeton_expire())) 
