@@ -1,5 +1,6 @@
 import os
 
+CLE_API = "sk-demo-123456789abcdefghijklmnopqrstuvwxyz"
 
 def secret_requis(nom):
     valeur = os.environ.get(nom)
@@ -12,4 +13,4 @@ def masquer(s, garde=4):
     return "*" * max(0, len(s) - garde) + s[-garde:]
 
 CLE_API = secret_requis("CLE_API")
-print("clé chargée :", masquer(CLE_API))
+print("clé chargée :", masquer(CLE_API)) 
