@@ -1,6 +1,5 @@
 import os
 
-CLE_API = "sk-demo-123456789abcdefghijklmnopqrstuvwxyz"
 
 def secret_requis(nom):
     valeur = os.environ.get(nom)
